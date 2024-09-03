@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+font-size: 1.1em;
+}
+
+header {
+    background-color: #d40000;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+section#home img {
+    margin-top: 1em;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+table-layout: auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #d40000;
+    color: white;
+font-size: 1.2em;
+}
+td {
+    font-size: 1.1em;  
+}
+
+table img {
+    display: block;
+    margin: 0 auto;
+}
+/* Basic styling for the audio section */
+#audio {
+    padding: 2em;
+    background-color: #fff; /* White background for simplicity */
+    border-top: 3px solid #d40000; /* Border to match the theme */
+    text-align: center;
+    margin-top: 2em; /* Add margin to separate from other content */
+}
+
+/* Basic styling for the audio player */
+audio {
+    width: 100%;
+    max-width: 600px; /* Limit the width for better appearance */
+    margin: 0 auto; /* Center the audio player */
+    display: block; /* Ensure it is a block-level element */
+border : 2px solid #d40000;
+border-radius: 30px;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* Adding for transition,transformation and animations code*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    transition: color 1s ease-in-out; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #d40000; /* Change color on hover */
+}
+table img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling */
+}
+
+table img:hover {
+    transform: scale(1.3); /* Slight zoom on hover */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Apply fade-in animation */
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d40000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #a80000; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+}
